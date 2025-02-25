@@ -8,6 +8,10 @@ public class AnimalPicker {
 
         System.out.println("Which animal would you like to see, a dog or a cat?");
         String choice = scan.nextLine();
+        while (!choice.toLowerCase().equals("dog") && !choice.toLowerCase().equals("cat")) {
+            System.err.println("invalid option, choose cat or dog.");
+            choice = scan.nextLine();
+        }
 
         System.out.println("Printing " + choice + " ASCII art here:");
     }
