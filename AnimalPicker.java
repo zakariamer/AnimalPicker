@@ -6,9 +6,9 @@ public class AnimalPicker {
         System.out.println();
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Which animal would you like to see, a dog or a cat?");
+        System.out.println("Which animal would you like to see, a dog, cat, or fish?");
         String choice = scan.nextLine();
-        while (!choice.toLowerCase().equals("dog") && !choice.toLowerCase().equals("cat")) {
+        while (!choice.toLowerCase().equals("dog") && !choice.toLowerCase().equals("cat") && !choice.toLowerCase().equals("fish")) {
             System.err.println("invalid option, choose cat or dog.");
             choice = scan.nextLine();
         }
@@ -21,10 +21,16 @@ public class AnimalPicker {
                                 " `_/      )\r\n" + //
                                 " (_(_/-(_/\r\n" + //
                                 "");
-        } else {
+        } else if (choice.equals("cat")){
             System.out.println("|\\---/|\r\n" + //
                                 "| o_o |\r\n" + //
                                 " \\_^_/");
+        } else {
+            System.out.println("|\\    \\ \\ \\ \\ \\ \\ \\      __   \r\n" + //
+                                "|  \\    \\ \\ \\ \\ \\ \\ \\   | O~-_\r\n" + //
+                                "|   >----|-|-|-|-|-|-|--|  __/\r\n" + //
+                                "|  /    / / / / / / /   |__\\  \r\n" + //
+                                "|/     / / / / / / /");
         }
     }
 
