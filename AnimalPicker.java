@@ -14,7 +14,18 @@ public class AnimalPicker {
         }
 
         System.out.println("Printing " + choice + " ASCII art here:");
-        System.out.println("I accidently did part 3 as well during part 2");
+        
+        if (choice.equals("dog")){
+            System.out.println("  __      _\r\n" + //
+                                "o'')}____//\r\n" + //
+                                " `_/      )\r\n" + //
+                                " (_(_/-(_/\r\n" + //
+                                "");
+        } else {
+            System.out.println("|\\---/|\r\n" + //
+                                "| o_o |\r\n" + //
+                                " \\_^_/");
+        }
     }
 
 }
