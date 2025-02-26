@@ -14,6 +14,7 @@ public class AnimalPicker {
         }
 
         System.out.println("Printing " + choice + " ASCII art here:");
+        System.out.println("I accidently did part 3 as well during part 2");
     }
 
 }
